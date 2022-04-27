@@ -86,7 +86,7 @@ img {
     display:flex;
     gap:2rem;
     flex-wrap: wrap;
-    justify-content: space-between;
+
 
     padding:1rem;
 
@@ -175,7 +175,8 @@ img {
 
 .text-box {
   
-    flex:1;
+    flex-basis: 40%
+  
 }
 .about-me {
     background-color: var(--primary-dark-blue-transparent);
@@ -190,13 +191,23 @@ img {
 }
 .about-content {
 
-    flex-direction: row-reverse;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
 .spotlight-on-weston-super-mare {
     background-color: var(--primary-dark-blue);
 }
 
+.spotlight-homepage-image {
+   
+    width:300px;
+    height:300px;
+}
 .spotlight-image {
     width:200px;
     height:200px;
@@ -268,7 +279,8 @@ img {
 .achievements {
     
     display:flex;
-    
+    flex-wrap:wrap;
+    justify-content: center;
     gap:1rem;
 }
 .achievement {
