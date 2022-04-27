@@ -50,6 +50,9 @@ h1 {
 h2 {
     line-height: 1.6;
 }
+h4 {
+    margin:0;
+}
 p {
     line-height: 1.5;
 }
@@ -263,16 +266,25 @@ img {
 
 
 .achievements {
+    
     display:flex;
-    align-items: center;
+    
     gap:1rem;
 }
 .achievement {
 
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
     width:300px;
-   
+    justify-content: end;
+ 
+
 }
 .achievement-image {
+
+    border:.3rem solid var(--primary-white);
+
     width:300px;
     height:300px;
 }
