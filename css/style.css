@@ -409,3 +409,10 @@ img {
    
   
 }
+
+.logo {
+    position: static;
+    display:block;
+    width:300px;
+
+}
