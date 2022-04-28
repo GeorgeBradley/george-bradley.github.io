@@ -3,9 +3,12 @@
     --primary-gray:rgb(134, 128, 128);
     --primary-dark-blue:#191c47;
     --primary-dark-blue-transparent:rgba(25, 28, 71, 0.9);
+    --primary-dark-blue-transparent-70:rgba(25, 28, 71, 0.85 );
     --light-blue:rgb(187, 211, 255);
 
     --purple: rgb(73, 81, 228);
+    --transparent-purple:rgba(73, 81, 228, 0.9);
+
 }
 *, ::before, *::after {
     box-sizing: border-box;
@@ -55,6 +58,11 @@ h4 {
 }
 p {
     line-height: 1.5;
+    font-size:1.2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 .opening-headings {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
@@ -177,9 +185,11 @@ img {
 
 .text-box {
   
-    flex-basis: 40%
-  
+    flex-basis: 40%;
+    
+    
 }
+
 .about-me {
     background-color: var(--primary-dark-blue-transparent);
 }
@@ -197,14 +207,40 @@ img {
     display:flex;
     align-items: center;
     justify-content: center;
-
+ 
 
 }
 
 .spotlight-on-weston-super-mare {
-    background-color: var(--primary-dark-blue);
-}
 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--primary-dark-blue); */
+    background-image: url('/birnbeck.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+  
+}
+.spotlight-on-weston-super-mare::before {
+    content:'';
+    position: absolute ;
+    width:100%;
+    height:100%;
+    z-index: 0;
+    background-color: var(--primary-dark-blue-transparent-70);
+  
+}
+.spotlight-on-weston-super-mare .about-content {
+    
+    z-index: 12;
+    position: relative;
+    
+}
 .spotlight-homepage-image {
    
     width:300px;
@@ -281,6 +317,7 @@ img {
 }
 .my-certifications {
     background-color:var(--primary-dark-blue-transparent);
+   
 }
 
 .achievements-section {
@@ -306,13 +343,22 @@ img {
 
 }
 .btech-image {
+    max-width: 400px;
     width:400px;
-    height:400px;
+    height:470px;
     border:.3rem solid var(--primary-white);
 
 }
 .qualification {
     display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.qualification-text {
+
+  
+    flex-basis: 50%;
 }
 .achievement-image {
 
@@ -324,4 +370,36 @@ img {
 .UCW-section {
     background-color: var(--primary-dark-blue-transparent);
 
+}
+
+.master-certificate-image {
+    width:500px;
+   
+    aspect-ratio: 16 / 9;
+    border:.3rem solid var(--primary-white);
+}
+
+.microsoft-certifications {
+    display:flex;
+    align-items: center;
+    
+
+}
+.certificate-intro{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+.certificate-intro .text{
+    flex-basis:60%;
+}
+.badge-card.standout {
+    flex-basis:60%;
+}
+.badge-card.standout .badge-image {
+    min-width:200px;
+    width:200px;
+    height:200px;
+   
+  
 }
