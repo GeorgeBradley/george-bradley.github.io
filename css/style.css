@@ -217,7 +217,7 @@ img {
     justify-content: center;
     align-items: center;
     /* background-color: var(--primary-dark-blue); */
-    background-image: url('/birnbeck.jpg');
+    background-image: url('/images/birnbeck.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
