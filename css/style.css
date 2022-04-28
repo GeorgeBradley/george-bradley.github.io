@@ -209,6 +209,7 @@ img {
    
     width:300px;
     height:300px;
+    border:.3rem solid var(--primary-white);
 }
 .spotlight-image {
     width:200px;
@@ -233,6 +234,15 @@ img {
     font-size:4rem;
     align-items: center;
     z-index: 10;
+}
+.weston-college-image {
+    width:200px;
+    height:200px;
+}
+.my-certifications-header {
+    display:flex;
+    align-items: center;
+    gap:1rem;
 }
 .badge-cards {
     display:flex;
@@ -295,10 +305,23 @@ img {
  
 
 }
+.btech-image {
+    width:400px;
+    height:400px;
+    border:.3rem solid var(--primary-white);
+
+}
+.qualification {
+    display:flex;
+}
 .achievement-image {
 
     border:.3rem solid var(--primary-white);
 
     width:300px;
     height:300px;
+}
+.UCW-section {
+    background-color: var(--primary-dark-blue-transparent);
+
 }
