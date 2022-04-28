@@ -382,24 +382,30 @@ img {
 .microsoft-certifications {
     display:flex;
     align-items: center;
-    
+    justify-content: center;
+    gap:1rem;
+    flex-wrap: wrap;
 
 }
 .certificate-intro{
     display:flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap:1rem;
+    
 }
 .certificate-intro .text{
-    flex-basis:60%;
+    flex-basis:50%;
 }
 .badge-card.standout {
-    flex-basis:60%;
+    flex-basis:47%;
 }
 .badge-card.standout .badge-image {
     min-width:200px;
     width:200px;
     height:200px;
+  
    
   
 }
