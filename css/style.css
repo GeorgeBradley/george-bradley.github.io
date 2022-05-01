@@ -432,7 +432,7 @@ img {
 .education-articles {
     display:flex;
     flex-direction: column;
-    gap:1rem;
+    gap:5rem;
 }
 
 
@@ -442,13 +442,22 @@ img {
    justify-content: space-between;
    gap:1rem;
 }
-.education-article:nth-of-type(odd) {
+
+.education-article:nth-of-type(even) {
     flex-direction: row-reverse;
 }
 .education-article__description {
     flex-basis:40%;
     justify-self: flex-start;
+ 
+    padding:1rem;
+    position: relative;
+    
 }
+
+
+
+
 .education-article-image.student-ambassador {
     max-width:900px;
     width:800px;
@@ -483,4 +492,30 @@ img {
 }
 .education-article__description.student-ambassador {
     align-self: flex-start;
+}
+.education-header {
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    margin-top:5rem;
+    margin-bottom: 2rem;;
+
+}
+.logo-title {
+    
+    flex-basis:80%;
+}
+.uni-group-image {
+    width:100%;
+    height:200px;
+    margin-bottom: 1rem;
+    border:.3rem solid var(--primary-white);
+}
+.world-skills {
+    align-self: flex-start;
+}
+
+.education-article.world-skills {
+
+    justify-content: space-evenly;
 }
