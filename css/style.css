@@ -421,7 +421,13 @@ img {
     margin:0;
 
 }
+.language-img {
+    position: static;
+    display:block;
+    width:100px;
+    margin:0;
 
+}
 /* Education section */
 
 .education-section {
@@ -583,4 +589,24 @@ footer {
 
 .next-section-btn:hover {
     transform:scale(1.2);
+}
+.languagesAndFrameworks {
+    color:var(--primary-dark-blue);
+    background-color: var(--primary-white);
+}
+.languages {
+    align-items: center;
+    gap:2rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+   
+}
+
+.languages > * {
+    
+}
+.languages-title {
+    
 }
