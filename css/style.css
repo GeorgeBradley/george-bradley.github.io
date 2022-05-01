@@ -439,7 +439,7 @@ img {
 .education-article {
     display:flex;
     align-items: center;
-   justify-content: space-between;
+   justify-content: space-evenly;
    gap:1rem;
 }
 
@@ -518,4 +518,11 @@ img {
 .education-article.world-skills {
 
     justify-content: space-evenly;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-image: linear-gradient( to right, rgba(234, 224, 224, 0), rgba(247, 234, 234, 0.75), rgba(247, 242, 242, 0) );
 }
