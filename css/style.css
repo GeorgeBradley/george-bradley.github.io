@@ -116,7 +116,6 @@ img {
 }
 .introduction {
     padding-top:10rem;
-    background-color: var(--primary-dark-blue);
 }
 .introduction-text {
   flex:1;
@@ -223,7 +222,7 @@ img {
     justify-content: center;
     align-items: center;
     /* background-color: var(--primary-dark-blue); */
-    background-image: url('/images/birnbeck.jpg');
+    background-image: url('../images/birnbeck.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -419,6 +418,7 @@ img {
     position: static;
     display:block;
     width:300px;
+    margin:0;
 
 }
 
@@ -505,6 +505,10 @@ img {
 .logo-title {
     
     flex-basis:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .uni-group-image {
     width:100%;
@@ -540,4 +544,43 @@ hr {
 
 .education:nth-of-type(odd) {
     background-color: var(--primary-dark-blue);
+}
+
+footer {
+    width:100%;
+    padding:1rem;
+    text-align: center;
+    font-size:1.3rem;
+    background-color: var(--primary-dark-blue-transparent);
+}
+.primary-header {
+    display:flex;
+    align-items: center;
+    background-color: var(--primary-dark-blue);
+
+    min-height:100vh;
+    
+}
+
+.next-section-btn {
+
+
+    width:50px;
+    margin:1rem;
+    height:50px;
+    padding:1rem;
+    font-size:1.3rem;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-white);
+    color: var(--primary-dark-blue);
+    border-radius: 50%;
+    transition: 200ms all;
+  
+}
+
+.next-section-btn:hover {
+    transform:scale(1.2);
 }
