@@ -16,7 +16,10 @@
 
 html {
 
-    scroll-padding-top: 200rem;
+ 
+}
+.dark-link {
+    color:var(--primary-dark-blue);
 }
 
 /* Utilities */
@@ -212,6 +215,7 @@ img {
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-wrap:wrap;
  
 
 }
@@ -632,3 +636,19 @@ footer {
    font-style: italic;
     padding-left:1rem;
 }
+
+.row {
+
+ 
+    align-items: center;
+    display:flex;
+    gap:2rem;
+}
+.mt-5 {
+    margin-top:6rem;
+}
+.col {
+    flex-basis:50%;
+    align-self: center;
+}
+
