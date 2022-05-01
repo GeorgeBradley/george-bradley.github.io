@@ -447,11 +447,12 @@ img {
 }
 .education-article__description {
     flex-basis:40%;
-    align-self: flex-start;
+    justify-self: flex-start;
 }
 .education-article-image.student-ambassador {
     max-width:900px;
     width:800px;
+   
   
 }
 .education-article .main-text {
@@ -468,6 +469,7 @@ img {
     max-width: 400px;
     width:400px;
     height:470px;
+    border:.3rem solid var(--primary-white);
 }
 .education-article-image.student-ambassador-image {
     max-width:none;
@@ -478,4 +480,7 @@ img {
 .education-article.student-ambassador {
 
     flex-direction: column;
+}
+.education-article__description.student-ambassador {
+    align-self: flex-start;
 }
