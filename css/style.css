@@ -107,7 +107,7 @@ img {
 }
 .profile-picture {
     min-width:400px;
-    min-height:70vh;
+   
     border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -623,4 +623,12 @@ footer {
     width:140px;
     margin:0;
     border-radius: 10px;
+}
+
+.blockquote {
+
+    font-size: 2rem;
+    border-left:4px solid var(--light-blue);
+   font-style: italic;
+    padding-left:1rem;
 }
