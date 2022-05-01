@@ -23,7 +23,21 @@ html {
 }
 
 /* Utilities */
-
+.gap-1 {
+    gap:1rem;
+}
+.gap-1 {
+    gap:2rem;
+}
+.flex {
+    display:flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.flex-direction-column {
+    flex-direction: column;
+}
 .absolute {
     position: absolute;
 }
@@ -141,6 +155,7 @@ img {
 .primary-header {
     display:flex;
     flex-direction: column;
+
   
 }
 .primary-nav {
@@ -542,6 +557,10 @@ hr {
     background-image: linear-gradient( to right, rgba(234, 224, 224, 0), rgba(247, 234, 234, 0.75), rgba(247, 242, 242, 0) );
 }
 
+.dark-hr {
+    margin-top:5rem;
+    background-image: linear-gradient( to right, rgba(234, 224, 224, 0), rgba(3, 2, 2, 0.75), rgba(247, 242, 242, 0) );
+}
 
 .enlarge-image {
     transition: 500ms all;
@@ -569,6 +588,8 @@ footer {
     background-color: var(--primary-dark-blue);
 
     min-height:100vh;
+   
+    background-size: cover;
     
 }
 
@@ -652,3 +673,7 @@ footer {
     align-self: center;
 }
 
+.udemy-screenshot {
+    width:400px;
+    height:400px;
+}
