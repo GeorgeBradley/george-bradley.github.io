@@ -208,7 +208,7 @@ img {
 
 .text-box {
   
-    flex-basis: 40%;
+    flex-basis: 60%;
     
     
 }
@@ -229,7 +229,7 @@ img {
 
     display:flex;
     align-items: center;
-    justify-content: center;
+ 
     flex-wrap:wrap;
  
 
@@ -243,25 +243,14 @@ img {
     /* background-color: var(--primary-dark-blue); */
     background-image: url('../images/birnbeck.jpg');
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
     z-index: -1;
   
 }
-.fa-brands.fa-facebook.overlap {
 
-    font-size: 3rem;
-    position: absolute;
-    top:8.6rem;
-    left:4rem;
-   
-    z-index: 1100000000000000000;
-    color:rgb(48, 89, 173);
-  
-    
-}
 
 .spotlight-on-weston-super-mare::before {
     content:'';
@@ -645,7 +634,7 @@ footer {
 .facebook-img {
     position: static;
     display:block;
-    width:140px;
+    width:90px;
     margin:0;
     border-radius: 10px;
 }
@@ -663,6 +652,7 @@ footer {
  
     align-items: center;
     display:flex;
+    
     gap:2rem;
 }
 .mt-5 {
@@ -676,4 +666,17 @@ footer {
 .udemy-screenshot {
     width:400px;
     height:400px;
+}
+
+
+.contact-me-btn {
+    text-decoration: none;
+    padding:1rem;
+    
+
+ 
+    color:var(--primary-white);
+    border: 1px solid var(--primary-white);
+    border-radius: 10px;
+
 }
