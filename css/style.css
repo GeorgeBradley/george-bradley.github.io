@@ -124,7 +124,7 @@ img {
 }
 .profile-picture {
     min-width:400px;
-   
+    min-height:400px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -652,6 +652,7 @@ footer {
  
     align-items: center;
     display:flex;
+    flex-wrap: wrap;
     
     gap:2rem;
 }
@@ -659,7 +660,8 @@ footer {
     margin-top:6rem;
 }
 .col {
-    flex-basis:50%;
+    flex:1;
+
     align-self: center;
 }
 
@@ -673,10 +675,20 @@ footer {
     text-decoration: none;
     padding:1rem;
     
+    display:inline-block;
+    
 
  
     color:var(--primary-white);
     border: 1px solid var(--primary-white);
     border-radius: 10px;
 
+    transition: 200ms all;
+}
+
+.contact-me-btn:hover {
+    border:1px solid var(--primary-dark-blue);
+    color:var(--primary-dark-blue);
+    background-color: var(--primary-white);
+    transform:scale(1.2);
 }
