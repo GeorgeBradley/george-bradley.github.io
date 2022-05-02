@@ -711,3 +711,11 @@ video {
     height:100%;
     border-radius: 10px;
 }
+.chess {
+    background-color: var(--primary-dark-blue-transparent-70);
+}
+.chess-picture {
+    width:500px;
+    height:500px;
+    border: .3rem solid var(--primary-white);
+}
