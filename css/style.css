@@ -21,7 +21,11 @@ html {
 .dark-link {
     color:var(--primary-dark-blue);
 }
+.primary-nav .container-x {
+    display:flex;
+    align-items: center;
 
+}
 /* Utilities */
 .gap-1 {
     gap:1rem;
@@ -71,7 +75,7 @@ h1 {
     font-size:3rem;
 }
 .person-name {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 h2 {
     line-height: 1.6;
@@ -172,20 +176,17 @@ img {
     width:100%;
     height:100%;
     display:flex;
+    
     gap:1rem;
-
+    flex-wrap: wrap;
     list-style-type: none;
     align-items: center;
     margin:0;
     padding:1rem;
     
 }
-.primary-nav__items li:nth-child(2) {
-    margin-left:auto;
-}
-.primary-nav__items {
-    margin-left:auto;
-}
+
+
 .primary-nav__items a {
     text-decoration: none;
     text-transform: capitalize;
@@ -454,6 +455,7 @@ img {
     display:flex;
     align-items: center;
    justify-content: space-evenly;
+   flex-wrap: wrap;
    gap:1rem;
 }
 
@@ -691,4 +693,21 @@ footer {
     color:var(--primary-dark-blue);
     background-color: var(--primary-white);
     transform:scale(1.2);
+}
+
+@media screen and (max-width:760px) {
+    
+    .hidden-mobile {
+        display:none;
+    }
+}
+
+.piano {
+    background-color: var(--primary-dark-blue);
+}
+
+video {
+    width:100%;
+    height:100%;
+    border-radius: 10px;
 }
