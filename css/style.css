@@ -798,19 +798,21 @@ video {
     .opening-headings {
         height:min-content;
         background-color: var(--purple);
-        padding:1rem 1rem 1rem 1rem;
+        padding:.6rem .8rem;
         clip-path: none;
-        
+        margin:1rem;
 
     }
     .primary-header  {
         display:flex;
         flex-direction: column;
+        align-items: flex-end;
         justify-content: end;
         
     }
  .introduction {
 
+    padding:0;
     grid-column: 1 / -1;
     align-self: flex-end;
   
