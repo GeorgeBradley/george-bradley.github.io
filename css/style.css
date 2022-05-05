@@ -780,6 +780,7 @@ video {
 
 @media screen and (max-width:900px) {
 
+   
     .opening-headings p {
         display:none;
     }
@@ -790,14 +791,20 @@ video {
 
         font-size:1.5rem;
     }
+    .introduction {
+        justify-self: flex-end;
+        align-items: flex-end;
+    }
     .header-content, .about-content {
 
         text-align: center;
        
-    
+     
+        
         padding:0;
    
     }
+    
     .contact-me-btn {
         display:none;
     }
@@ -814,9 +821,8 @@ video {
 
     }
     .primary-header  {
-        display:flex;
-        flex-direction: column;
-        justify-content: end;
+      
+     
         
     }
  .introduction {
@@ -827,7 +833,8 @@ video {
  
     height:fit-content;
     max-width:100%;
-            
+    justify-self: end;    
+    align-self: flex-end;  
     }
     .profile-image {
         width:200px;
