@@ -32,6 +32,9 @@ html {
 .gap-1 {
     gap:1rem;
 }
+.fw-w {
+    flex-wrap: wrap;
+}
 .gap-1 {
     gap:2rem;
 }
@@ -159,7 +162,8 @@ img {
     position: absolute;
     bottom:0;
     right:0;
-    padding:1rem;
+    padding:.5rem;
+    font-size: .8rem;
     background-color: var(--primary-dark-blue);
 }
 .profile-picture {
