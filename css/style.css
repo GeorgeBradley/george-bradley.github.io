@@ -107,8 +107,8 @@ p {
 
 
 .opening-headings {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-    background-color: var(--purple);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 45% 75%, 20% 100%, 21% 75%, 0% 75%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 45% 75%, 20% 100%, 21% 75%, 0% 75%);    background-color: var(--purple);
     
     padding:2rem 2rem 15rem 2rem;
 }
@@ -151,6 +151,8 @@ img {
 
     display:flex;
     gap:1rem;
+    align-items: center;
+    
     position: absolute;
     bottom:0;
     right:0;
@@ -189,7 +191,7 @@ img {
  
     grid-column: 2 / -1;
 
-    max-width:500px;
+    max-width:700px;
     padding-top:10rem;
    
 }
@@ -774,8 +776,11 @@ video {
 
 @media screen and (max-width:900px) {
 
+    p {
+        font-size:1rem;
+    }
     h1 {
-        font-size:2rem;
+        font-size:1.5rem;
     }
     .header-content, .about-content {
 
@@ -783,6 +788,9 @@ video {
        
     
 
+    }
+    .contact-me-btn {
+        display:none;
     }
     .opening-headings {
         height:min-content;
@@ -798,13 +806,12 @@ video {
     }
  .introduction {
 
-    padding:1rem;
     grid-column: 1 / -1;
     align-self: flex-end;
   
  
     height:fit-content;
-    min-width:100%;
+    max-width:100%;
             
     }
     .profile-image {
