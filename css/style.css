@@ -79,6 +79,7 @@ body {
 }
 h1 {
     font-size:3rem;
+    margin:0;
 }
 .person-name {
     font-size: 1.5rem;
@@ -787,10 +788,11 @@ video {
     }
     .header-content, .about-content {
 
-
+        text-align: center;
        
     
-
+        padding:0;
+   
     }
     .contact-me-btn {
         display:none;
@@ -798,21 +800,19 @@ video {
     .opening-headings {
         height:min-content;
         background-color: var(--purple);
-        padding:.6rem .8rem;
+        padding:1.6rem;
         clip-path: none;
-        margin:1rem;
+        
 
     }
     .primary-header  {
         display:flex;
         flex-direction: column;
-        align-items: flex-end;
         justify-content: end;
         
     }
  .introduction {
 
-    padding:0;
     grid-column: 1 / -1;
     align-self: flex-end;
   
