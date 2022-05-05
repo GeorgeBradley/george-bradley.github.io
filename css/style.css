@@ -113,7 +113,7 @@ p {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 45% 75%, 20% 100%, 21% 75%, 0% 75%);    */
      background-color: var(--purple);
     
-    padding:1rem;
+    padding:2rem;
 }
 .opening-headings h2 {
     font-weight: 100;
@@ -192,6 +192,7 @@ img {
 }
 .introduction {
  
+    align-self: center;
     grid-column: 2 / -1;
 
     max-width:700px;
