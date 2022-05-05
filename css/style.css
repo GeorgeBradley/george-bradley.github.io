@@ -54,6 +54,9 @@ html {
 .object-pos-top {
     object-position: top;
 }
+.object-pos-left {
+    object-position: left;
+}
 .object-pos-bottom {
     object-position: top;
 }
@@ -119,7 +122,8 @@ img {
     height:100%;
     position: absolute;
     object-fit: cover;
-    
+   
+   
 }
 
 .image-container {
@@ -138,8 +142,24 @@ img {
     padding:1rem;
 
 }
+.primary-header {
+    position: relative;
+    display:flex;
+    background-image:url(../images/backgrounds/MeWithBackground.JPG);
+}
+.primary-header .pic-credit {
+
+    display:flex;
+    gap:1rem;
+    position: absolute;
+    bottom:0;
+    right:0;
+    padding:1rem;
+    background-color: var(--primary-dark-blue);
+}
 .profile-picture {
-    min-width:400px;
+   
+    
     min-height:400px;
     border-radius: 10px;
     overflow: hidden;
@@ -147,15 +167,7 @@ img {
     flex:1;
     border:.3rem solid var(--primary-white);
 }
-.introduction {
-    padding-top:10rem;
-}
-.introduction-text {
-  flex:1;
-  
-  font-weight: 100;
- 
-}
+
 .container {
     max-width:1100px;
     margin-inline:auto;
@@ -169,10 +181,23 @@ img {
 }
 
 .primary-header {
-    display:flex;
-    flex-direction: column;
+  
 
   
+}
+.introduction {
+ 
+    grid-column: 2 / -1;
+
+    max-width:500px;
+    padding-top:10rem;
+   
+}
+.introduction-text {
+
+  
+  font-weight: 100;
+ 
 }
 .primary-nav {
     width:100%;
@@ -587,8 +612,9 @@ footer {
     background-color: var(--primary-dark-blue-transparent);
 }
 .primary-header {
-    display:flex;
-    align-items: center;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  
     background-color: var(--primary-dark-blue);
 
     min-height:100vh;
@@ -747,13 +773,40 @@ video {
 }
 
 @media screen and (max-width:900px) {
+
+    h1 {
+        font-size:2rem;
+    }
     .header-content, .about-content {
 
 
+       
     
 
     }
+    .opening-headings {
+        height:min-content;
+        background-color: var(--purple);
+        padding:1rem 1rem 1rem 1rem;
+        clip-path: none;
+    }
+    .primary-header  {
+        display:flex;
+        flex-direction: column;
+        justify-content: end;
+        
+    }
+ .introduction {
 
+    padding:1rem;
+    grid-column: 1 / -1;
+    align-self: flex-end;
+  
+ 
+    height:fit-content;
+    min-width:100%;
+            
+    }
     .profile-image {
         width:200px;
         height:200px;
