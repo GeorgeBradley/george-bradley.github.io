@@ -776,6 +776,9 @@ video {
 
 @media screen and (max-width:900px) {
 
+    .opening-headings p {
+        display:none;
+    }
     p {
         font-size:1rem;
     }
@@ -797,6 +800,8 @@ video {
         background-color: var(--purple);
         padding:1rem 1rem 1rem 1rem;
         clip-path: none;
+        
+
     }
     .primary-header  {
         display:flex;
