@@ -74,12 +74,13 @@ body {
     max-height: 100vh;
     color:var(--primary-white);
   
-    
     margin:0;
 }
 h1 {
-    font-size:3rem;
+    font-size:2rem;
     margin:0;
+    padding:0;
+ 
 }
 .person-name {
     font-size: 1.5rem;
@@ -108,10 +109,11 @@ p {
 
 
 .opening-headings {
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 45% 75%, 20% 100%, 21% 75%, 0% 75%);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 45% 75%, 20% 100%, 21% 75%, 0% 75%);    background-color: var(--purple);
+    /* -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 45% 75%, 20% 100%, 21% 75%, 0% 75%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 45% 75%, 20% 100%, 21% 75%, 0% 75%);    */
+     background-color: var(--purple);
     
-    padding:2rem 2rem 15rem 2rem;
+    padding:1rem;
 }
 .opening-headings h2 {
     font-weight: 100;
@@ -784,6 +786,7 @@ video {
         font-size:1rem;
     }
     h1 {
+
         font-size:1.5rem;
     }
     .header-content, .about-content {
@@ -796,6 +799,10 @@ video {
     }
     .contact-me-btn {
         display:none;
+    }
+    .header-content {
+        align-self: flex-end;
+        justify-self: end;
     }
     .opening-headings {
         height:min-content;
@@ -814,7 +821,7 @@ video {
  .introduction {
 
     grid-column: 1 / -1;
-    align-self: flex-end;
+
   
  
     height:fit-content;
