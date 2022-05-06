@@ -30,7 +30,9 @@ html {
 }
 .primary-nav .container-x {
     display:flex;
+    justify-content: space-between;
     align-items: center;
+   
 
 }
 /* Utilities */
@@ -159,6 +161,7 @@ img {
     display:flex;
     background-image:url(../images/backgrounds/MeWithBackground.JPG);
 }
+
 .primary-header .pic-credit {
 
     display:flex;
@@ -207,7 +210,7 @@ img {
 
     max-width:700px;
     padding-top:10rem;
-    margin-bottom:20rem;
+ 
 
    
 }
@@ -705,6 +708,7 @@ footer {
     border-left:4px solid var(--light-blue);
    font-style: italic;
     padding-left:1rem;
+    width:fit-content;
 }
 
 .row {
