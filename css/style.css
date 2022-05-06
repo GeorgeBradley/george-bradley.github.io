@@ -467,7 +467,7 @@ img {
     
 }
 .certificate-intro .text{
-    flex-basis:50%;
+  
 }
 .badge-card.standout {
     flex-basis:47%;
@@ -834,8 +834,9 @@ video {
     }
     .opening-headings {
         height:min-content;
+        
         background-color: var(--purple);
-        padding:1.6rem;
+        padding: .5rem;
         clip-path: none;
         
 
