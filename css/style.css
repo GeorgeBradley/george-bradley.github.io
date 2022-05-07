@@ -958,6 +958,7 @@ video {
 .form-control input:focus {
   
     outline:2px solid var(--purple);
+    border-radius: 5px;
 }
 textarea {
     border:1px solid #ccc;
@@ -966,6 +967,7 @@ textarea {
 }
 textarea:focus {
     outline:2px solid var(--purple);
+    border-radius: 5px;
 }
 .send-button {
     padding:1rem;
