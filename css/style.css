@@ -109,12 +109,16 @@ h1 {
     color:var(--primary-white);
   
 }
+.ta-e {
+    align-self: flex-end;
+}
 .george-icon {
-    width:100px;
-    height:100px;
+    width:75px;
+    height:75px;
+    aspect-ratio: 16 / 9;
     border-radius: 50%;
     overflow: hidden;
-    border:.2rem solid var(--primary-white);
+    border:.13rem solid var(--primary-white);
 }
 .icon-area {
     display:flex;
@@ -269,12 +273,12 @@ img {
 .primary-nav__items {
    
     display:flex;
-    
+    margin-left: auto;
     gap:1rem;
     flex-wrap: wrap;
     list-style-type: none;
     align-items: center;
-    margin:0;
+
     padding:1rem;
     
 }
