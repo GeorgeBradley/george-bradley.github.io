@@ -830,8 +830,8 @@ video {
 
 }
 .chess-picture {
-    max-width:500px;
-   height:400px;
+    max-width:300px;
+    
 
 }
 
@@ -950,24 +950,31 @@ video {
 
 }
 .form-control input {
+    
     border-radius: 10px;
     border:1px solid #ccc;
     padding:.5rem .5rem .5rem .5rem;
     overflow: hidden;
+    padding:.6rem;
 }
 .form-control input:focus {
   
-    outline:2px solid var(--purple);
-    border-radius: 5px;
+    outline: none;
+    background-color: hsl(132, 56%, 86%);
+
+    overflow: hidden;
 }
 textarea {
     border:1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
+    padding:.6rem;
 }
 textarea:focus {
-    outline:2px solid var(--purple);
-    border-radius: 5px;
+    outline:none;
+    background-color: hsl(132, 56%, 86%);
+
+
 }
 .send-button {
     padding:1rem;
