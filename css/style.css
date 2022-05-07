@@ -7,7 +7,7 @@
     --light-blue:rgb(187, 211, 255);
 
     --purple: rgb(73, 81, 228);
-    --transparent-purple:rgba(73, 81, 228, 0.9);
+    --transparent-purple:rgba(73, 81, 228, 0.6);
 
 }
 *, ::before, *::after {
@@ -40,6 +40,9 @@ html {
 
 .fd-c {
     flex-direction: column;
+}
+.ai-c {
+    align-items: center;
 }
 .fd-r {
     flex-direction: row;
@@ -130,11 +133,11 @@ h1 {
     font-size: 1.5rem;
 }
 h2 {
-    letter-spacing: 2px;
+
     font-family: 'Poppins', sans-serif;
     position: relative;
     font-weight: 600;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     
 }
@@ -150,7 +153,8 @@ h4 {
 }
 p {
     line-height: 1.5;
-    font-size:x-large;
+    font-size:1rem;
+    
 }
 
 
@@ -735,7 +739,7 @@ footer {
 
 .blockquote {
 
-    font-size: 2rem;
+    font-size: 1.3rem;
     border-left:4px solid var(--light-blue);
    font-style: italic;
     padding-left:1rem;
@@ -919,4 +923,66 @@ video {
     overflow: hidden;
     box-shadow: rgb(255, 255, 255) 1px 1px 10px 1px;
     height:150px;
+}
+
+.contact-me {
+    color:var(--primary-dark-blue);
+}
+
+.contact-form {
+    max-width:400px;
+    width:100%;
+    color:var(--primary-white);
+    background-color: var(--primary-dark-blue);
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+    border-radius: 5px;
+    gap:1rem;
+    
+}
+.form-control {
+    display:flex;
+    flex-direction: column;
+   
+    line-height: 2;
+    
+
+}
+.form-control input {
+    border-radius: 10px;
+    border:1px solid #ccc;
+    padding:.5rem .5rem .5rem .5rem;
+}
+.form-control input:focus {
+  
+    outline:2px solid var(--purple);
+}
+textarea {
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+textarea:focus {
+    outline:2px solid var(--purple);
+}
+.send-button {
+    padding:1rem;
+    border-radius: 5px;
+    border:1px solid var(--purple);
+    background-color: var(--purple);
+    color:var(--primary-white);
+    transition: all 200ms;
+}
+.send-button:hover {
+    transform:scale(1.01);
+    background-color: var(--transparent-purple);
+    cursor: pointer;
+}
+.contact-info {
+
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+
+    font-size:2rem;
 }
