@@ -106,10 +106,17 @@ h1 {
     font-family: 'Poppins', sans-serif;
  
 }
+.mobile-menu-icon {
+
+    display:flex;
+    flex-direction: column;
+    gap:0.3rem;
+}
 .mobile-menu-icon > span {
-    width:20px;
-    height:20px;
-    color:var(--primary-white);
+    width:27px;
+    height:3px;
+    
+    background-color: rgb(13, 240, 240);
   
 }
 .ta-e {
@@ -313,7 +320,7 @@ img {
 }
 
 .about-me {
-    
+  
     background-color: var(--primary-dark-blue-transparent);
 }
 .about-image {
@@ -613,14 +620,7 @@ img {
     margin-bottom: 2rem;;
 
 }
-.logo-title {
-    
-    flex-basis:80%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .uni-group-image {
     width:100%;
     height:200px;
@@ -674,8 +674,9 @@ footer {
   
     background-color: var(--primary-dark-blue);
 
-    min-height:100vh;
+    min-height:70vh;
    
+    background-position: center;
     background-size: cover;
     
 }
@@ -848,6 +849,8 @@ video {
     h1 {
        
         font-size:1.5rem;
+        max-width:170px;
+        padding:.5rem;
     }
     .introduction {
         justify-self: flex-end;
@@ -873,7 +876,7 @@ video {
     .opening-headings {
         height:min-content;
         
-        background-color: var(--purple);
+        background-color: var(--transparent-purple);
         padding: .5rem;
         clip-path: none;
         
