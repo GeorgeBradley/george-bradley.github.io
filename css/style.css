@@ -798,7 +798,9 @@ footer {
 }
 
 @media screen and (max-width:760px) {
-    
+    .row {
+        justify-content: center;
+    }
     .hidden-mobile {
         display:none;
     }
@@ -835,9 +837,7 @@ video {
 
 @media screen and (max-width:900px) {
 
-    .row {
-        justify-content: center;
-    }
+    
    
     .opening-headings p {
         display:none;
@@ -953,6 +953,7 @@ video {
     border-radius: 10px;
     border:1px solid #ccc;
     padding:.5rem .5rem .5rem .5rem;
+    overflow: hidden;
 }
 .form-control input:focus {
   
@@ -961,6 +962,7 @@ video {
 textarea {
     border:1px solid #ccc;
     border-radius: 10px;
+    overflow: hidden;
 }
 textarea:focus {
     outline:2px solid var(--purple);
