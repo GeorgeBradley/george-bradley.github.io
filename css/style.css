@@ -3,6 +3,7 @@
     --secondary-color:#0d1117;
     --white: #ffffffb3;
 
+    --white-solid-border: 1px solid var(--white);
 }
 *, ::before, *::after {
     box-sizing: border-box;
@@ -16,8 +17,8 @@ html {
 }
 
 .white-image-border {
-    box-shadow: 0 0 0 3px #f0f6fc1a;
-    border:2px solid #30363d;
+    box-shadow: 0 0 0 3px var(--white);
+    border:var(--white-solid-border);
     border-radius: 10px;
  
 }
@@ -123,8 +124,8 @@ h1 {
     aspect-ratio: 16 / 9;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 0 1px var(--secondary-color);
-    border:1px solid var(--primary-color);
+    box-shadow: 0 0 0 1px var(--white);
+    border:  var(--white-solid-border);
 }
 .icon-area {
     display:flex;
@@ -219,16 +220,6 @@ img {
     font-size: .8rem;
     background-color: var(--secondary-color);
 }
-.profile-picture {
-   
-    
-    min-height:400px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--primary-color) 0px 5px 15px;
-    flex:1;
-    border:.3rem solid var(--white);
-}
 
 .container {
     max-width:1100px;
@@ -321,7 +312,7 @@ img {
     height:400px;
     border-radius: 10px;
     overflow: hidden;
-    border:.3rem solid var(--white);
+    
 }
 .about-content {
 
