@@ -18,7 +18,7 @@ html {
 
 .white-image-border {
     box-shadow: 0 0 0 3px var(--white);
-    border:var(--white-solid-border);
+    border: 2px solid var(--white);
     border-radius: 10px;
  
 }
@@ -119,8 +119,8 @@ h1 {
     align-self: flex-end;
 }
 .george-icon {
-    width:75px;
-    height:75px;
+    width:60px;
+    height:60px;
     aspect-ratio: 16 / 9;
     border-radius: 50%;
     overflow: hidden;
@@ -130,11 +130,12 @@ h1 {
 .icon-area {
     display:flex;
     align-items: center;
+    flex-shrink: 0;
     gap:1rem;
 }
 .person-name {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 h2 {
 
@@ -547,6 +548,7 @@ img {
     display:flex;
     flex-direction: column;
     gap:5rem;
+    
 }
 
 
@@ -573,19 +575,13 @@ img {
 
 
 
-.education-article-image.student-ambassador {
-    max-width:800px;
-    width:800px;
-    flex:1;
-   
-  
-}
+
 
 .education-article-image {
     max-width: 400px;
 
     height:470px;
-    border:.3rem solid var(--primary-white);
+    border: 2px solid var(--white);
 }
 .education-article-image.student-ambassador-image {
     max-width:none;
@@ -889,10 +885,16 @@ video {
         height:200px;
     }
 }
+.references {
+    margin-top:7rem;
+}
 .reference-header {
     display:flex;
     align-items: center;
     flex-direction: column;
+
+    padding:1rem;
+ 
 }
 .reference {
     display:flex;
@@ -901,7 +903,11 @@ video {
     justify-content: center;
     align-items: center;
     gap:1rem;
+    border: 1px solid var(--white);
 
+}
+.reference h3 {
+    margin-top:1rem;
 }
 .reference .row {
     justify-content: center;
@@ -910,7 +916,8 @@ video {
     width:150px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: var(--primary-color) 1px 1px 10px 1px;
+    border: 2px solid var(--white);
+    margin-top:-6.5rem;
     height:150px;
 }
 
