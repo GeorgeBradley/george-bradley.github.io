@@ -29,6 +29,7 @@ html {
 }
 .primary-nav .container-x {
     display:flex;
+    flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
    
@@ -800,11 +801,20 @@ footer {
 }
 
 @media screen and (max-width:760px) {
+    
+    .primary-nav .container-x {
+        justify-content: center;
+    }
+    .primary-nav__items {
+        justify-content: center;
+        gap:1rem;
+        padding:0;
+    }
     .row {
         justify-content: center;
     }
     .hidden-mobile {
-        display:none;
+        /* display:none; */
     }
 }
 
