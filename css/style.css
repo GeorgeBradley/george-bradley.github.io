@@ -1,6 +1,8 @@
 :root {
     --primary-color:#161b22;
+    --primary-color-transparent:rgba(22, 27, 34, .9);
     --secondary-color:#0d1117;
+    --tertiary-color:#ffff;
     --white: #ffffffb3;
 
     --white-solid-border: 1px solid var(--white);
@@ -13,7 +15,7 @@
 
 html {
 
- 
+    scroll-behavior: smooth;
 }
 
 .white-image-border {
@@ -30,6 +32,8 @@ html {
     justify-content: space-between;
     align-items: center;
    
+    padding-left:1rem;
+    padding-right:1rem;
 
 }
 /* Utilities */
@@ -93,6 +97,7 @@ body {
     color:var(--white);
   
     margin:0;
+   
 }
 h1 {
     font-size:4rem;
@@ -258,6 +263,7 @@ img {
     z-index: 1;
     backdrop-filter: blur(20px);
     scroll-padding: none;
+    
     background-color: var(--primary-color);
     
 }
@@ -265,27 +271,34 @@ img {
    
     display:flex;
     margin-left: auto;
-    gap:1rem;
+    gap:2rem;
     flex-wrap: wrap;
     list-style-type: none;
     align-items: center;
 
-    padding:1rem;
+   
     
 }
 
 
 .primary-nav__items a {
+
+    display:block;
+
+    text-align: center;
     text-decoration: none;
     text-transform: capitalize;
+    font-weight: bolder;
     color:var(--white);
     transition: all 400ms ease-in-out;
+    line-height: 1.4;
+    font-size: .9rem;
 }
 
 .primary-nav__items a:hover {
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    
+
+    color:var(--tertiary-color);
+    transform:scale(1.1);
 }
 
 
@@ -304,6 +317,7 @@ img {
 
 .about-me {
   
+    padding-top:6rem;
     background-color: var(--secondary-color);
 }
 .about-image {
@@ -331,7 +345,6 @@ img {
     display:flex;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--primary-dark-blue); */
     background-image: url('../images/birnbeck.jpg');
     background-size: cover;
     background-position: top;
@@ -349,7 +362,7 @@ img {
     width:100%;
     height:100%;
 
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-transparent);
   
 }
 .spotlight-on-weston-super-mare .about-content {
@@ -427,6 +440,7 @@ img {
 }
 
 .achievements-section {
+    padding:6rem;
     background-color: var(--primary-color);
 }
 
@@ -540,6 +554,7 @@ img {
 /* Education section */
 
 .education-section {
+    padding-top:2rem;
     background-color:var(--primary-color);
    
 }
@@ -689,6 +704,7 @@ footer {
     transform:scale(1.2);
 }
 .languagesAndFrameworks {
+    padding-top:9rem;
     color:var(--secondary-color);
     background-color: var(--white);
 }
