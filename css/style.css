@@ -1,7 +1,7 @@
 :root {
-    --primary-color:#161b22;
+    --primary-color:#d69733;
     --primary-color-transparent:rgba(22, 27, 34, .9);
-    --secondary-color:#0d1117;
+    --secondary-color:#e69122;
     --tertiary-color:#ffff;
     --white: #ffffffb3;
 
@@ -165,7 +165,8 @@ h1 {
     padding:0;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
- 
+  
+
 }
 .mobile-menu-icon {
 
@@ -260,17 +261,42 @@ img {
     padding:1rem;
 
 }
+.primary-header .hero {
+    width:500px;
+    position: absolute;
+   
+    height:fit-content;
+
+    margin-top:auto;
+    margin-bottom: auto;
+ 
+}
+
+
+.primary-header img {
+    
+    max-width:1000px;
+  position: absolute;
+  bottom:0;
+  right:0;
+ 
+
+  height:fit-content;
+}
+
 .primary-header {
+
+    padding-top:80px;
     position: relative;
     display:flex;
    
   
     /* background-image:; */
-    background:
+    /* background: */
         /* top, transparent black, faked with gradient */ 
 
         /* bottom, image */
-        url(../images/backgrounds/MeWithBackground.JPG);
+        /* url(../images/backgrounds/MeWithBackground.JPG); */
         
 }
 
@@ -302,10 +328,11 @@ img {
 
 .introduction {
  
+    position: relative;
     align-self: center;
-    grid-column: 2 / -1;
+    /* grid-column: 2 / -1; */
 
-    max-width:700px;
+    /* max-width:700px; */
     padding-top:10rem;
  
 
@@ -320,7 +347,7 @@ img {
 .primary-nav {
     width:100%;
     position: fixed;
-    
+    height: 80px;
     z-index: 1;
     backdrop-filter: blur(20px);
     scroll-padding: none;
@@ -751,17 +778,22 @@ footer {
   
     background-color: var(--primary-color);
 }
+.primary-header .container {
+    display:flex;
+    justify-content: center;
+}
 .primary-header {
-    display:grid;
+    /* display:flex;
+    justify-content: center; */
     grid-template-columns: repeat(2, 1fr);
   
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 
-    min-height:100vh;
+    height:1000px;
    
     /* background-position: center; */
-    background-size: cover;
-    background-position: bottom;
+    /* background-size: cover;
+    background-position: bottom; */
     
 }
 
