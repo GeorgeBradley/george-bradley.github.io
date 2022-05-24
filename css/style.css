@@ -1,7 +1,7 @@
 :root {
-    --primary-color:#d69733;
+    --primary-color:#16631d;
     --primary-color-transparent:rgba(22, 27, 34, .9);
-    --secondary-color:#e69122;
+    --secondary-color:#1d641f;
     --tertiary-color:#ffff;
     --white: #ffffffb3;
 
@@ -12,6 +12,7 @@
 *, ::before, *::after {
     box-sizing: border-box;
 }
+
 
 .block .fa-solid.fa-map-pin {
   padding:1rem;
@@ -292,12 +293,12 @@ img {
    
   
     /* background-image:; */
-    /* background: */
-        /* top, transparent black, faked with gradient */ 
+     background:
+         top, transparent black, faked with gradient 
 
-        /* bottom, image */
-        /* url(../images/backgrounds/MeWithBackground.JPG); */
-        
+         bottom, image 
+        url(../images/backgrounds/MeWithBackground.JPG); 
+       
 }
 
 .primary-header .pic-credit {
@@ -348,7 +349,7 @@ img {
     width:100%;
     position: fixed;
     height: 80px;
-    z-index: 1;
+    z-index: 2;
     backdrop-filter: blur(20px);
     scroll-padding: none;
     
@@ -793,12 +794,12 @@ footer {
 
     min-height: 100vh;
     background-image: url(/images/backgrounds/MeWithBackground.JPG);
-    height:1000px;
+
    
     
     background-position: center; 
      background-size: cover;
-    background-position: bottom;
+
     
 }
 
@@ -815,7 +816,7 @@ footer {
     justify-self: center;
     align-self: center;
     margin:2rem;
-    width:50%;
+    width:80%;
     position: relative;
     z-index: 1;
     
@@ -1001,11 +1002,11 @@ video {
     p {
         font-size:1rem;
     }
-    h1 {
+    .primary-header h1 {
        
-        font-size:1.5rem;
-        max-width:170px;
-        padding:.5rem;
+        grid-column: 1 / -1;
+        align-self: flex-end;
+        font-size: 1.5rem;
     }
     .introduction {
         justify-self: flex-end;
