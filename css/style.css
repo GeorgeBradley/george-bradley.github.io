@@ -262,58 +262,13 @@ img {
     padding:1rem;
 
 }
-.primary-header .hero {
-    width:500px;
-    position: absolute;
-   
-    height:fit-content;
-
-    margin-top:auto;
-    margin-bottom: auto;
- 
-}
 
 
-.primary-header img {
-    
-    max-width:1000px;
-  position: absolute;
-  bottom:0;
-  right:0;
- 
 
-  height:fit-content;
-}
 
-.primary-header {
 
-    padding-top:80px;
-    position: relative;
-    display:flex;
-   
-  
-    /* background-image:; */
-     background:
-         top, transparent black, faked with gradient 
 
-         bottom, image 
-        url(../images/backgrounds/MeWithBackground.JPG); 
-       
-}
 
-.primary-header .pic-credit {
-
-    display:flex;
-    gap:1rem;
-    align-items: center;
-    
-    position: absolute;
-    bottom:0;
-    right:0;
-    padding:.5rem;
-    font-size: .8rem;
-    background-color: var(--secondary-color);
-}
 
 .container {
     max-width:1100px;
@@ -779,10 +734,7 @@ footer {
   
     background-color: var(--primary-color);
 }
-.primary-header .container {
-    display:flex;
-    justify-content: center;
-}
+
 .primary-header {
     display:grid;
     /* display:flex;
@@ -1001,6 +953,9 @@ video {
     }
     p {
         font-size:1rem;
+    }
+    .primary-header {
+        background-position: left;
     }
     .primary-header h1 {
        
