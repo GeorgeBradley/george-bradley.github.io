@@ -14,10 +14,11 @@
 }
 
 :target{
-    outline : 3px solid blue;
+    /* outline : 3px solid blue; */
 }
 .table-of-contents {
     position: fixed;
+
 
     line-height: 1.7;
     display:flex;
@@ -30,6 +31,7 @@
     background-color: var(--secondary-color);
 
     height:fit-content;
+    display:none;
 }
 
 @media screen and (max-width:2174px) {
@@ -1246,3 +1248,8 @@ textarea:focus {
     align-items: center;
 }
 
+@media screen and (max-width:666px) {
+    .row > .col {
+        flex:auto;
+    }
+}
