@@ -824,10 +824,27 @@ footer {
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
- 
+    font-size:4rem;
+    color:rgb(158, 155, 155);
    
 }
 
+/* .language:nth-child(1) {
+    color:orange;
+}
+.language:nth-child(2) {
+    color:cornflowerblue;
+}
+.language:nth-child(3) {
+    color:rgb(238, 152, 166);
+}
+.language:nth-child(4) {
+    color:black;
+}
+.language:nth-child(5) {
+    color:rgb(206, 157, 12);
+    background-color: #16631d;
+} */
 .languages > * {
     
 }
@@ -974,6 +991,7 @@ video {
         grid-column: 1 / -1;
         align-self: flex-end;
         font-size: 1.5rem;
+        text-align: center;
     }
     .introduction {
         justify-self: flex-end;
