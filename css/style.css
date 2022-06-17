@@ -598,6 +598,7 @@ img {
 }
 .certificate-intro .text{
   
+    max-width:50%;
 }
 .badge-card.standout {
     flex-wrap:wrap;
@@ -761,7 +762,7 @@ footer {
     background-color: var(--primary-color); */
 
     min-height: 100vh;
-    background-image: url(../images/backgrounds/MeWithBackground.JPG);
+    background: linear-gradient(to right, rgba(237, 94, 100, .0), rgba(0, 0, 0, 0.8)), url(../images/backgrounds/MeWithBackground.JPG);
 
    
     
@@ -771,14 +772,7 @@ footer {
     
 }
 
-.primary-header::before {
-    content:'';
-    position: absolute;
-    grid-column: 1 / -1;
-    width:100%;
-    height:100%;
-    background-color: rgba(13, 17, 23, .4);
-}
+
 .primary-header h1 {
     grid-column: 2 / -1;
     justify-self: center;
@@ -972,6 +966,8 @@ video {
     }
     .primary-header {
         background-position: left;
+        background: linear-gradient(to bottom, rgba(237, 94, 100, .0), rgba(0, 0, 0, 0.9)), url(../images/backgrounds/MeWithBackground.JPG);
+        background-size: cover;
     }
     .primary-header h1 {
        
