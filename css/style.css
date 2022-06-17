@@ -592,13 +592,28 @@ img {
     display:flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+  
     gap:1rem;
     
+}
+@media screen and (max-width:895px) {
+    .certificate-intro .text{
+  
+        max-width:100%;
+    }
 }
 .certificate-intro .text{
   
     max-width:50%;
+}
+@media screen and (max-width:695px) {
+    .certificate-intro {
+        justify-content: center;
+    }
+    .certificate-intro .text{
+    max-width:100%;
+
+    }
 }
 .badge-card.standout {
     flex-wrap:wrap;
@@ -885,11 +900,21 @@ footer {
  
     align-items: center;
     display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
+   
+    
     gap:2rem;
 
     position: relative;
+}
+
+@media screen and (max-width:895px) {
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .certificate-intro {
+        
+    }
 }
 .mt-5 {
     margin-top:6rem;
@@ -1070,7 +1095,8 @@ video {
     justify-content: center;
 }
 .testimonial-image {
-    width:150px;
+    max-width:150px;
+    width:100%;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid var(--white);
