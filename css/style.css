@@ -40,6 +40,7 @@
     }
 }
 
+
 .block .fa-solid.fa-map-pin {
   padding:1rem;
 }
@@ -77,6 +78,12 @@ html {
     scroll-padding-top: 6rem;
 }
 
+.image-container {
+    position: relative;
+    width:150px;
+   
+    height:150px;
+}
 .white-image-border {
     box-shadow: 0 0 0 3px var(--white);
     border: 2px solid var(--white);
@@ -190,6 +197,7 @@ h1 {
     font-size:3rem;
     margin:0;
    
+    text-align: center;
     padding:0;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
@@ -237,6 +245,7 @@ h2 {
     position: relative;
     font-weight: 600;
     font-size: 1.5rem;
+    text-align: center;
     line-height: 1.6;
     
 }
@@ -410,7 +419,7 @@ img {
 
 .about-me {
   
-    padding-top:6rem;
+
     background-color: var(--secondary-color);
 }
 .about-image {
@@ -433,54 +442,10 @@ img {
 
 }
 
-.spotlight-on-weston-super-mare {
-
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/birnbeck.jpg');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-
-  
-}
 
 
-.spotlight-on-weston-super-mare::before, .chess::before {
-    content:'';
-    position: absolute ;
-    width:100%;
-    height:100%;
 
-    background-color: var(--primary-color-transparent);
-  
-}
-.spotlight-on-weston-super-mare .about-content {
-    
 
-    position: relative;
-    
-}
-.spotlight-homepage-image {
-   
-    max-width:300px;
-    width:100%;
-    height:300px;
-    border:.3rem solid var(--primary-white);
-}
-.spotlight-image {
-    max-width:200px;
-    width:100%;
-    height:200px;
-    border-radius: 50%;
-    border:.3rem solid var(--primary-white);
-    overflow: hidden;
-  
- 
-}
 
 .weston-college-image {
     max-width:200px;
@@ -896,6 +861,16 @@ footer {
 .languages-title {
     
 }
+
+.spotlight-on-weston-super-mare {
+  
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),  url('../images/birnbeck.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
 .spotlight-on-weston-super-mare .images {
     display:flex;
     flex-direction: column;
@@ -934,10 +909,10 @@ footer {
     
     gap:2rem;
 
-    position: relative;
+   
 }
 .row > .col {
-    flex:1;
+
  
 }
 @media screen and (max-width:895px) {
@@ -1023,7 +998,7 @@ video {
 .chess {
 
     /* background-color: var(--primary-dark-blue-transparent-70); */
-    background-image: url('../images/backgrounds/chess2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)),  url('../images/backgrounds/chess2.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -1268,6 +1243,6 @@ textarea:focus {
 
 @media screen and (max-width:666px) {
     .row > .col {
-        flex:auto;
+
     }
 }
