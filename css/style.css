@@ -704,7 +704,8 @@ img {
     flex-direction: row-reverse;
 }
 .education-article__description {
-    flex:1;
+  
+    max-width:400px;
     justify-self: flex-start;
  
     padding:1rem;
@@ -714,7 +715,9 @@ img {
 
 
 
+.education .container {
 
+}
 
 
 .education-article-image {
@@ -1002,7 +1005,7 @@ footer {
     }
     .contact-me .row .col{
 
-       padding:2rem;
+ 
 
     }
 }
@@ -1114,7 +1117,7 @@ video {
     }
 }
 .references {
-    margin-top:7rem;
+
     display:flex;
     flex-wrap: wrap;
 
@@ -1130,13 +1133,16 @@ video {
         flex:auto;
 
     }
+    .reference:not(:first-child) {
+        margin-top: 7rem;
+    }
 }
 
 .reference-header {
     display:flex;
     align-items: center;
     flex-direction: column;
-
+    text-align: center;
     padding:1rem;
  
 }
@@ -1150,6 +1156,16 @@ video {
     border: 1px solid var(--white);
     margin-top:6rem;
 
+}
+.reference p {
+    font-size:larger;
+    text-align: center;
+    margin:0;
+    padding:1rem;
+}
+.reference i {
+    font-size:2rem;
+   
 }
 .reference h3 {
     margin-top:1rem;
@@ -1175,7 +1191,7 @@ video {
     max-width:600px;
     width:100%;
     border: 1px solid #ccc;
-    padding:2rem;
+    padding:1rem;
     display:flex;
     flex-direction: column;
     border-radius: 5px;
