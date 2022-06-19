@@ -85,7 +85,7 @@ html {
     height:150px;
 }
 .white-image-border {
-    box-shadow: 0 0 0 3px var(--white);
+
     border: 2px solid var(--white);
     border-radius: 10px;
  
@@ -245,9 +245,19 @@ h2 {
     position: relative;
     font-weight: 600;
     font-size: 1.5rem;
-    text-align: center;
+    margin:0;
     line-height: 1.6;
     
+}
+@media screen and (max-width:746px) {
+
+    h1, h2, h3 {
+   
+        text-align: center;
+    }
+    p {
+        text-align: left;
+    }
 }
 
 h3 {
@@ -309,7 +319,7 @@ img {
 .container {
     max-width:1100px;
     margin-inline:auto;
-    padding:2rem;
+    padding:1rem;
 }
 .container-x { 
     height:inherit;
@@ -569,7 +579,7 @@ img {
     max-width:500px;
    
     aspect-ratio: 16 / 9;
-    border:.3rem solid var(--white);
+
 }
 
 .microsoft-certifications {
