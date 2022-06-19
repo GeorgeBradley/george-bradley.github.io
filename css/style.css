@@ -327,7 +327,7 @@ img {
 }
 .container-x { 
     height:inherit;
-    max-width:1200px;
+    max-width:1500px;
     margin-inline:auto;
     padding:1rem;
 }
@@ -744,6 +744,8 @@ img {
 }
 
 hr {
+    margin-bottom: 2rem;
+    margin-top:2rem;
     width: 100%;
     border: none;
     height: 1px;
@@ -1262,4 +1264,16 @@ textarea:focus {
     .row > .col {
 
     }
+}
+
+.piano {
+    background: linear-gradient(to right, rgba(0, 0, 0, 3), rgba(0, 0, 0, .4)), url(../pianokeys.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.chess {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, .9)), url(../chess.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
