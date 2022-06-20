@@ -914,6 +914,9 @@ footer {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
 }
+.blockquote.dark {
+    border-left:4px solid var(--primary-color);
+}
 .relative {
     position: relative;
 }
