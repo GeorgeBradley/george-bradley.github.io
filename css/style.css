@@ -811,6 +811,13 @@ footer {
     
    
 }
+
+@media screen and (max-height:885px) {
+    .primary-header h1 {
+        font-size:2rem;
+        margin-top:10rem;
+    }
+}
 .absolute {
     position: absolute;
     left:1;
