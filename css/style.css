@@ -1331,3 +1331,14 @@ textarea:focus {
     text-decoration: none;
     text-transform: capitalize;
 }
+
+
+audio {
+    width:100%;
+    margin-top:2rem;
+}
+
+.wave-community-radio {
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
