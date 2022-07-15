@@ -1342,3 +1342,7 @@ audio {
     margin-top:3rem;
     margin-bottom:3rem;
 }
+
+.ta-l {
+    text-align: left !important;
+}
